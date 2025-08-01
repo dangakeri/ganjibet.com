@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./font/Satoshi-Variable.ttf) format("opentype");
+  }
+}
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/* SCROLLBAR */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.ant-modal {
+  background-color: #23313d;
+  color: #fff;
+  /*  */
+}
+.custom-modal .ant-modal-content {
+  background-color: #23313d;
+  color: #fff;
+}
+
+.custom-modal .ant-modal-header .ant-modal-title {
+  background-color: #23313d;
+  color: white;
+}
+
+.custom-modal .ant-modal-footer {
+  background-color: #fff;
+  color: #fff;
+}
+.custom-modal .ant-modal-close {
+  color: white;
+}
+.ant-btn-variant-solid :hover {
+  background-color: #ff3b3b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+.icon {
+  display: inline !important;
+  max-width: none !important;
+}
+
+input,
+button,
+textarea,
+select {
+  font: 16px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+@keyframes pulse-glow {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.7;
+    box-shadow: 0 0 0 0 rgba(255, 214, 0, 0.7);
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 1;
+    box-shadow: 0 0 0 10px rgba(255, 214, 0, 0);
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.7;
+    box-shadow: 0 0 0 0 rgba(255, 214, 0, 0);
+  }
+}
+
+.glow-dot {
+  animation: pulse-glow 2s infinite;
+}
