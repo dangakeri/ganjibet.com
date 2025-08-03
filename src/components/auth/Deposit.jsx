@@ -29,7 +29,7 @@ function Deposit({ showModal }) {
       />
 
       <div className="flex flex-row">
-        <div className="bg-[#FFD600]/90 flex flex-row justify-center items-center pr-2 lg:rounded-full rounded mx-1">
+        <div className="bg-[#FF6D00]/90 flex flex-row justify-center items-center pr-2 lg:rounded-full rounded mx-1">
           {/* Coin is hidden on small and shown on md+ */}
           <div className="hidden md:block">
             <Coin

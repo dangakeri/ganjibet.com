@@ -181,8 +181,8 @@ function ProfilePage() {
           <div className="px-4 md:px-4 lg:px-4 py-0">
             <Link to={`/promotion`}>
               <Badge.Ribbon
-                color="#FFD600"
-                text={<span style={{ color: "#000" }}>New</span>}
+                color="#FF6D00"
+                text={<span style={{ color: "#fff" }}>New</span>}
                 style={{ color: "#000" }}
               >
                 <div className="bg-secondary rounded-lg shadow-sm transition-shadow duration-300 px-4 py-6">
@@ -212,7 +212,7 @@ function ProfilePage() {
             <div className="bg-secondary rounded-lg transition-shadow duration-300 p-6">
               <p className="text-base font-medium text-textGrey">Deposit</p>
               <p className="text-textGrey font-normal text-sm my-4">
-                Deposit money to your Swiftbet account
+                Deposit money to your Ganjbets account
               </p>
               <Input
                 placeholder="Enter amount to deposit"
@@ -246,7 +246,7 @@ function ProfilePage() {
               <p className="text-textGrey my-6">Minimum KES10</p>
               <Button
                 type="primar"
-                className="bg-primary text-black hover:bg-primary px-10"
+                className="bg-primary text-white hover:bg-primary px-10"
                 onClick={handlePayment}
               >
                 {isLoading ? <Loader /> : "Deposit"}
@@ -258,7 +258,7 @@ function ProfilePage() {
             <div className="bg-secondary rounded-lg  duration-300 p-6">
               <p className="text-base font-medium text-textGrey">Withdraw</p>
               <p className="text-textGrey font-normal text-sm my-6">
-                Withdraw money earned from Swiftbet
+                Withdraw money earned from Ganjibets.com
               </p>
               <Input
                 placeholder="Enter amount to withdraw"
@@ -274,7 +274,7 @@ function ProfilePage() {
               <Button
                 type="primar"
                 disabled={isWithdrawing || balance?.walletBalance < 100}
-                className="bg-primary text-black hover:bg-[#FFD700] px-10 cursor-pointer"
+                className="bg-primary text-white hover:bg-[#FF6D00] px-10 cursor-pointer"
                 onClick={() => handleWithdraw()}
               >
                 {isWithdrawing ? <Loader /> : "Withdraw"}

@@ -36,7 +36,7 @@ function LoginPage() {
   return (
     <div className="bg-bgBody min-h-screen w-full overflow-x-auto">
       <MoveBack />
-      <section className="bg-bgBody xs:py-2 lg:py24 lg:mb-16">
+      <section className="bg-bgBody xs:py-2 xs:pb-6 lg:mb-16">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="relative max-w-2xl mx-auto md:mt-16">
             <div className="overflow-hidden bg-secondary rounded-md">
@@ -122,7 +122,7 @@ function LoginPage() {
                     <div>
                       <button
                         type="submit"
-                        className="inline-flex items-center justify-center w-full lg:mt-6  px-4 py-2 text-base font-semibold text-black transition-all duration-200 bg-primary border border-transparent rounded-md focus:outline-none hover:bg-primary focus:bg-primary"
+                        className="inline-flex items-center justify-center w-full lg:mt-6 text-white  px-4 py-2 text-base font-semibold transition-all duration-200 bg-primary border border-transparent rounded-md focus:outline-none hover:bg-primary focus:bg-primary"
                       >
                         {isLoading ? <Loader /> : "Login"}
                       </button>
@@ -160,9 +160,9 @@ function LoginPage() {
               </div>
             </div>
           </div>
-        </div>
+        </div>{" "}
+        <Footer />
       </section>
-      <Footer />
     </div>
   );
 }

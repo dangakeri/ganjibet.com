@@ -14,7 +14,7 @@ const StyledNavLink = styled(NavLink)`
   transition: color 0.3s;
 
   &.active {
-    color: #ffd600;
+    color: #ff6d00;
   }
 `;
 
@@ -31,7 +31,7 @@ function BottomNav() {
               <img src="./assets/home.svg" className="h-[24px]" />
               <p
                 className={`font-normal text-sm ${
-                  isActive ? "text-[#FFD600]" : "text-textGrey"
+                  isActive ? "text-[#FF6D00]" : "text-textGrey"
                 }`}
               >
                 Home
@@ -68,7 +68,7 @@ function BottomNav() {
                 />
                 <p
                   className={`font-normal text-sm ${
-                    isActive ? "text-[#FFD600]" : "text-textGrey"
+                    isActive ? "text-[#FF6D00]" : "text-textGrey"
                   }`}
                 >
                   Aviator
@@ -87,7 +87,7 @@ function BottomNav() {
                 />
                 <p
                   className={`font-normal text-sm ${
-                    isActive ? "text-[#FFD600]" : "text-textGrey"
+                    isActive ? "text-[#FF6D00]" : "text-textGrey"
                   }`}
                 >
                   Aviator
@@ -102,7 +102,7 @@ function BottomNav() {
               <img src="/assets/promotion.svg" className="h-[24px]" />
               <p
                 className={`font-normal text-sm ${
-                  isActive ? "text-[#FFD600]" : "text-textGrey"
+                  isActive ? "text-[#FF6D00]" : "text-textGrey"
                 }`}
               >
                 Promos
@@ -116,7 +116,7 @@ function BottomNav() {
               <img src="/assets/profile.svg" className="h-[24px]" />
               <p
                 className={`font-normal text-sm ${
-                  isActive ? "text-[#FFD600]" : "text-textGrey"
+                  isActive ? "text-[#FF6D00]" : "text-textGrey"
                 }`}
               >
                 Profile

@@ -27,11 +27,11 @@ function DepositHeader() {
             e.stopPropagation();
             handleGoBack();
           }}
-          className="h-10 w-10 mr-4 cursor-pointer text-white flex items-center justify-center bg-[#B89C00]"
+          className="h-10 w-10 mr-4 cursor-pointer text-white flex items-center justify-center bg-[#FF6D00]/40"
         >
           &larr;
         </div>
-        <span className="absolute left-1/2 transform -translate-x-1/2 font-medium text-sm">
+        <span className="absolute left-1/2 transform -translate-x-1/2 font-medium text-sm text-white">
           Deposit
         </span>
       </div>

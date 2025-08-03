@@ -129,7 +129,7 @@ function RegisterPage() {
                     <div>
                       <button
                         type="submit"
-                        className="inline-flex items-center justify-center w-full lg:mt-6 px-4 py-1.5 text-sm font-semibold text-black transition-all duration-200 bg-primary border border-transparent rounded-md focus:outline-none hover:bg-orange-600 focus:bg-orange-600"
+                        className="inline-flex items-center justify-center w-full lg:mt-6 px-4 py-1.5 text-sm font-semibold text-white transition-all duration-200 bg-primary border border-transparent rounded-md focus:outline-none hover:bg-orange-600 focus:bg-orange-600"
                       >
                         {isLoading ? <Loader /> : "Register"}
                       </button>

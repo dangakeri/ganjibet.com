@@ -105,8 +105,8 @@ function LoginModal({ open, onOk, onCancel, showRegisterModal }) {
         </Link>
 
         <button
-          className="w-full py-3 rounded-md mb-6 bg-primary text-black"
-          style={{ backgroundColor: "#FFD600" }}
+          className="w-full py-3 rounded-md mb-6 bg-primary text-white"
+          style={{ backgroundColor: "#FF6D00" }}
           type="submit"
         >
           {isLoading ? <Loader /> : "Login"}

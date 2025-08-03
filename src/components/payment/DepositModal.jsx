@@ -56,7 +56,7 @@ function DepositModal({ open, onOk, onCancel, showDepositModal }) {
     >
       <div className=" rounded-lg  duration-300 p-6">
         <p className="text-textGrey font-normal text-sm my-4">
-          Deposit money to your Swiftbet account
+          Deposit money to your Ganjibets.com account
         </p>
         <Input
           placeholder="Enter amount to deposit"

@@ -91,8 +91,8 @@ function RegisterModal({ open, onOk, onCancel, showLoginForm }) {
         </div>
 
         <button
-          className="w-full py-3 rounded-md my-6 bg-primary text-black"
-          style={{ backgroundColor: "#FFD600" }}
+          className="w-full py-3 rounded-md my-6 bg-primary text-white"
+          style={{ backgroundColor: "#FF6D00" }}
           type="submit"
         >
           {isLoading ? <Loader /> : "Register"}

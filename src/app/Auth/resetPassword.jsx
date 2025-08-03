@@ -57,7 +57,7 @@ function ResetPassword() {
                 gap: "3px",
               }}
               inputStyle={{
-                borderColor: "#FFD600",
+                borderColor: "#FF6D00",
                 borderRadius: "10px",
                 // margin: "5px",
                 border: "solid #5E6268 1px",
@@ -67,7 +67,7 @@ function ResetPassword() {
                 fontSize: "18px",
                 textAlign: "center",
               }}
-              inputFocusStyle={{ borderColor: "#FFD600" }}
+              inputFocusStyle={{ borderColor: "#FF6D00" }}
               onComplete={(value) => {}}
               autoSelect={true}
               regexCriteria={/^[0-9]*$/}
@@ -80,7 +80,7 @@ function ResetPassword() {
           />
           <Button
             type="primar"
-            className="bg-primary w-full mt-10 text-black"
+            className="bg-primary w-full mt-10 text-white"
             onClick={() => submitData()}
           >
             {isPending ? <Loader /> : "Confirm password"}

@@ -18,9 +18,9 @@ function Navbar({}) {
       <div>
         <Link to={`/`}>
           <img
-            src="/assets/swiftbetlogo.svg"
+            src="/logo.svg"
             alt="logo"
-            className="h-[3rem] lg:w-[10rem] xs:w-[8rem] xs:h-[3rem]"
+            className="h-[2rem] lg:w-[10rem] xs:w-[8rem] xs:h-[2rem]"
           />
         </Link>
       </div>

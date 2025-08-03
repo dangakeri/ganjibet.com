@@ -11,7 +11,7 @@ function PromotionsCard({ src }) {
           </h2>
           <p className="text-sm text-textGrey mt-0.5">Ends Tomorrow</p>
         </div>
-        <button className="bg-primary text-black font-medium py-1.5 px-3 rounded-md text-xs hover:bg-yellow-600 transition-colors whitespace-nowrap">
+        <button className="bg-primary text-white font-medium py-1.5 px-3 rounded-md text-xs hover:bg-yellow-600 transition-colors whitespace-nowrap">
           View Offer
         </button>
       </div>

@@ -23,6 +23,7 @@ import { popularGames } from "../../utils/PopularGames";
 import VimplayBetsCard from "../../components/games/VimplayBetsCrad";
 import { useRef } from "react";
 import ElbetBetsCard from "../../components/games/ElbetBetsCard";
+import AviatorBanner from "../../components/homepage/AviatorBanner";
 
 function Homepage() {
   const { games } = useGames();
@@ -69,6 +70,7 @@ function Homepage() {
     <>
       <div className="bg-bgBody min-h-screen w-full overflow-x-auto">
         {initialRound == 0 && sessionRound != 1 && <PopUp />}
+        <AviatorBanner />
         <Navbar />
         <TopScrollNav />
         <RecentWins />

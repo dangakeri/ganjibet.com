@@ -9,7 +9,7 @@ function SplashLoader() {
             alt="Swiftbet"
             className="w-full h-full object-cover"
           />
-          <div className="absolute top-0 left-0 w-full h-full bg-[#FFD600] rounded-full animate-growGlow opacity-30"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[#FF6D00] rounded-full animate-growGlow opacity-30"></div>
         </div>
       </div>
     </div>

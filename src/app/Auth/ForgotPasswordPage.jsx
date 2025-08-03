@@ -85,7 +85,7 @@ function ForgotCard() {
         <Button
           htmlType="submit"
           type="primary"
-          className="bg-primary w-full mt-10 text-black"
+          className="bg-primary w-full mt-10 text-white"
           loading={isPending}
           disabled={isPending}
         >

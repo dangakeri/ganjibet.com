@@ -1,12 +1,12 @@
 import { Divider } from "antd";
 function Footer() {
   return (
-    <footer className="bg-bgBody text-textGrey pt-6  pb-8 my-10">
+    <footer className="bg-bgBody text-textGrey pt-6  pb-8 my-10 ">
       <div className="container mx-auto px-4 flex flex-col sm:space--2">
         <h1 className="font-semibold lg:text-justify">License</h1>
         <p className="text-sm md:text-sm lg:text-sm text-textGrey text-start">
-          Swiftbet is Owned and Operated By TIRPSMON LIMITED, Licensed By the
-          Betting Control and Licensing Board License Number BK0000812.
+          Ganjibets is Owned and Operated By TELORA TECHNOLOGIES, Licensed By
+          the Betting Control and Licensing Board License Number BK0000812.
         </p>
 
         <div className="w-full">
@@ -25,14 +25,14 @@ function Footer() {
             Responsible Gaming Policy
           </h1>
           <p className="text-sm md:text-sm lg:text-sm text-textGrey text-justify">
-            Swiftbet is dedicated to responsible gaming and a safe betting
+            Ganjibets is dedicated to responsible gaming and a safe betting
             environment. Underage gambling is strictly prohibited, and players
             must be at least 18 years old to participate. Please gamble
             responsibly and seek support if needed.
           </p>
         </div>
 
-        <div className="flex lg:flex-row xs:grid xs:grid-cols-1 gap-2 mt-4 text-sm xs:mx-0 lg:items-center lg:justify-center">
+        <div className="flex lg:flex-row xs:grid xs:grid-cols-1 gap-2 mt-4  text-sm xs:mx-0 lg:items-center lg:justify-center">
           <a
             href="./pdf/privacy-policy.pdf"
             target="_blank"
@@ -74,7 +74,7 @@ function Footer() {
           }}
         />
         <p className="text-sm text-center">
-          &copy; {new Date().getFullYear()} Swiftbet. All rights reserved.
+          &copy; {new Date().getFullYear()} Ganjibets. All rights reserved.
         </p>
       </div>
     </footer>

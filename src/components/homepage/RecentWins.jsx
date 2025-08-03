@@ -210,8 +210,8 @@ function RecentWins() {
     <div className="px-2 pb-2 relative">
       <h5 className="text-textGrey mt-2 text-sm md:text-base font-semibold relative inline-block pl-4">
         <span className="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3">
-          <span className="absolute inset-0 bg-[#FFD600] rounded-full animate-ping opacity-75 duration-1000"></span>
-          <span className="absolute inset-0 bg-[#FFD600] rounded-full glow-dot"></span>
+          <span className="absolute inset-0 bg-[#FF6D00] rounded-full animate-ping opacity-75 duration-1000"></span>
+          <span className="absolute inset-0 bg-[#FF6D00] rounded-full glow-dot"></span>
         </span>
         Recent Big Wins
       </h5>
