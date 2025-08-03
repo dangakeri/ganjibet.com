@@ -38,14 +38,14 @@ export default function AviatorBanner() {
       </style>
 
       <div className="flex-1 font-semibold animate-text-pulse">
-        <span className="text-primary text-[12px]">CLAIM</span> UPTO{" "}
-        <span className="text-primary text-[12px]">2,500,000/=</span>{" "}
-        <span className="text-white text-[12px]">AVIATOR</span>{" "}
-        <span className="text-primary text-[12px]">RAINS</span> DAILY !!!
+        <span className="text-primary text-[11px]">CLAIM</span> UPTO{" "}
+        <span className="text-primary text-[11px]">2,500,000/=</span>{" "}
+        <span className="text-white text-[11px]">AVIATOR</span>{" "}
+        <span className="text-primary text-[11px]">RAINS</span> DAILY !!!
       </div>
       <button
         onClick={() => setVisible(false)}
-        className="ml-4 text-primary text-xl font-bold focus:outline-none"
+        className="ml-1 text-primary text-xl font-bold focus:outline-none"
         aria-label="Dismiss banner"
       >
         &times;
