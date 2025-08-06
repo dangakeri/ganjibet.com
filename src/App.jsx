@@ -5,7 +5,6 @@ import AppLayout from "./components/AppLayout";
 import PromotionsPage from "./app/promotions/promotionsPage";
 import FreeBetsPage from "./app/Freebet/FreeBetsPage";
 import ProfilePage from "./app/profile/ProfilePage";
-import TermsOfService from "./app/Auth/TermsOfService";
 import ForgotPasswordPage from "./app/Auth/ForgotPasswordPage";
 import { AppProvider } from "./context/AuthContext";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
@@ -31,6 +30,10 @@ import ClickIdTracker from "./utils/clickIdTracker";
 import WithdrawView from "./app/payment/WithdrawalView";
 import LaunchElbetGame from "./app/homepage/LaunchElbetGame";
 import AuthLayout from "./components/AuthLayout";
+import TermsAndConditions from "./app/Auth/TermsAndConditions";
+import PrivacyPolicy from "./app/Auth/PrivacyPolicy";
+import ResponsibleGamingPolicy from "./app/Auth/ResponsibleGamingPolicy";
+import AMLPolicy from "./app/Auth/AMLPolicy";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -71,7 +74,7 @@ function App() {
                     <Route
                       path="vimplay/:gameID"
                       element={<LaunchVimPlayGames />}
-                    />{" "}
+                    />
                     <Route
                       path="elbet/:gameAlias/:gameID"
                       element={<LaunchElbetGame />}
@@ -94,14 +97,22 @@ function App() {
                         <Route path="profile" element={<ProfilePage />} />
                         <Route path="login" element={<LoginPage />} />
                         <Route
-                          path="termsofservice"
-                          element={<TermsOfService />}
-                        />
+                          path="terms-and-conditions"
+                          element={<TermsAndConditions />}
+                        />{" "}
+                        <Route
+                          path="privacy-policy"
+                          element={<PrivacyPolicy />}
+                        />{" "}
+                        <Route
+                          path="responsible-gaming-policy"
+                          element={<ResponsibleGamingPolicy />}
+                        />{" "}
+                        <Route path="aml-policy" element={<AMLPolicy />} />
                         <Route
                           path="forgotpassword"
                           element={<ForgotPasswordPage />}
                         />
-
                         <Route path="register" element={<RegisterPage />} />
                         <Route path="history" element={<HistoryPage />} />
                         <Route path="reset" element={<ResetPassword />} />

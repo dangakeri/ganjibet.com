@@ -1,13 +1,15 @@
-import { Modal, Button } from "antd";
+import { Modal } from "antd";
 
 import { useAppState } from "../../context/AuthContext";
 import Loader from "../Loader";
-import { InputGroup, InputLeftAddon, Input } from "@chakra-ui/react";
+import { InputGroup, InputLeftAddon } from "@chakra-ui/react";
 import { Fingerprint } from "lucide-react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { useRegister } from "../../hooks/useAuth";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
+import PropTypes from "prop-types";
+
 function RegisterModal({ open, onOk, onCancel, showLoginForm }) {
   const { registerFn, isLoading } = useRegister();
   const { dispatch } = useAppState();
@@ -101,14 +103,9 @@ function RegisterModal({ open, onOk, onCancel, showLoginForm }) {
           By clicking register in this site, You can confirm that you are over
           18 years old and you have read and agree to the
           <span className="underline cursor-pointer text-primary">
-            <a
-              href="/pdf/terms-and-condition.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              Terms of service
-            </a>
+            <Link to="terms-and-conditions">
+              <p className="hover:underline">Terms of service</p>
+            </Link>
           </span>
         </p>
         <p className="text-textGrey text-center my-6 ">
@@ -124,5 +121,12 @@ function RegisterModal({ open, onOk, onCancel, showLoginForm }) {
     </Modal>
   );
 }
+
+RegisterModal.propTypes = {
+  open: PropTypes.bool.isRequired,
+  onOk: PropTypes.func,
+  onCancel: PropTypes.func,
+  showLoginForm: PropTypes.func.isRequired,
+};
 
 export default RegisterModal;

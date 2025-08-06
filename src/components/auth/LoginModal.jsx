@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import { Link, useNavigate } from "react-router";
 import { useAppState } from "../../context/AuthContext";
 import Loader from "../Loader";
-import { InputGroup, InputLeftAddon, Input } from "@chakra-ui/react";
+import { InputGroup, InputLeftAddon } from "@chakra-ui/react";
 import { Fingerprint } from "lucide-react";
 import { useForm } from "react-hook-form";
-import { useQueryClient } from "@tanstack/react-query";
+
 import toast from "react-hot-toast";
 import { useLogIn } from "../../hooks/useAuth";
 
@@ -19,7 +19,6 @@ LoginModal.propTypes = {
 
 function LoginModal({ open, onOk, onCancel, showRegisterModal }) {
   const { dispatch } = useAppState();
-  const queryClient = useQueryClient();
 
   const navigate = useNavigate();
   const { logInFn, isLoading } = useLogIn();
@@ -115,18 +114,13 @@ function LoginModal({ open, onOk, onCancel, showRegisterModal }) {
           By clicking login in this site, You can confirm that you are over 18
           years old and you have read and agree to the
           <span className="underline cursor-pointer text-primary">
-            <a
-              href="/pdf/terms-and-condition.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-primary hover:underline cursor-pointer"
-            >
-              Terms of Service
-            </a>
+            <Link to="/terms-and-conditions">
+              <p className="hover:underline">Terms of service</p>
+            </Link>
           </span>
         </p>
         <p className="text-textGrey text-center my-6">
-          Don't have an account?
+          Don&apos;t have an account?
           <span
             className="underline text-primary cursor-pointer"
             onClick={() => showRegisterModal()}

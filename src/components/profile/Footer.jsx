@@ -1,12 +1,13 @@
 import { Divider } from "antd";
+import { Link } from "react-router";
 function Footer() {
   return (
     <footer className="bg-bgBody text-textGrey pt-6  pb-8 my-10 ">
       <div className="container mx-auto px-4 flex flex-col sm:space--2">
         <h1 className="font-semibold lg:text-justify">License</h1>
         <p className="text-sm md:text-sm lg:text-sm text-textGrey text-start">
-          Ganjibets is Owned and Operated By TELORA TECHNOLOGIES, Licensed By
-          the Betting Control and Licensing Board License Number BK0000812.
+          Ganjibets is Owned and Operated By TELORA TECHNOLOGIES LIMITED,
+          Licensed By the Betting Control and Licensing Board of Kenya.
         </p>
 
         <div className="w-full">
@@ -33,38 +34,22 @@ function Footer() {
         </div>
 
         <div className="flex lg:flex-row xs:grid xs:grid-cols-1 gap-2 mt-4  text-sm xs:mx-0 lg:items-center lg:justify-center">
-          <a
-            href="./pdf/privacy-policy.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline cursor-pointer"
-          >
-            Privacy Policy
-          </a>
-          <a
-            href="./pdf/responsible-gaming-policy.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline cursor-pointer"
-          >
-            Responsible Gaming
-          </a>
-          <a
-            href="./pdf/AMLP-swiftbet.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline cursor-pointer"
-          >
-            Anti-Money Laundering Policy
-          </a>
-          <a
-            href="/pdf/terms-and-condition.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline cursor-pointer"
-          >
-            Terms and Conditions
-          </a>
+          <Link to="/privacy-policy">
+            <p className="hover:underline cursor-pointer">Privacy Policy</p>
+          </Link>
+          <Link to="/responsible-gaming-policy">
+            <p className="hover:underline cursor-pointer">Responsible Gaming</p>
+          </Link>{" "}
+          <Link to="/aml-policy">
+            <p className="hover:underline cursor-pointer">
+              Anti-Money Laundering Policy
+            </p>
+          </Link>
+          <Link to="/terms-and-conditions">
+            <p className="hover:underline cursor-pointer">
+              Terms and Conditions
+            </p>
+          </Link>
         </div>
         <Socials />
         <Divider
@@ -96,6 +81,7 @@ function Socials() {
       >
         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
       </svg>
+
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

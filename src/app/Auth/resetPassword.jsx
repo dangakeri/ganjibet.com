@@ -30,7 +30,6 @@ function ResetPassword() {
           navigate("/login");
         }
       },
-      onError: (err) => {},
     });
   }
   return (
@@ -68,7 +67,6 @@ function ResetPassword() {
                 textAlign: "center",
               }}
               inputFocusStyle={{ borderColor: "#FF6D00" }}
-              onComplete={(value) => {}}
               autoSelect={true}
               regexCriteria={/^[0-9]*$/}
             />

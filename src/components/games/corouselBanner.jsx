@@ -1,11 +1,5 @@
 import { Carousel } from "antd";
-const contentStyle = {
-  height: "160px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
+
 function CorouselBanner() {
   return (
     <div className="lg:grid lg:grid-cols-[2vw,1fr,2vw] sm:min-w-full">
@@ -17,22 +11,22 @@ function CorouselBanner() {
           className="md:h-[12rem] max-w-[1280px] h-[12rem] xs:h-[8rem] w-full "
         >
           <img
-            src="/assets/banner1.webp"
+            src="/banner1.png"
             alt="most populars banner"
             className="object-fit w-full h-full lg:h-[12rem]"
           />
           <img
-            src="/assets/banner2.webp"
+            src="/banner2.png"
             alt="most populars banner"
             className="object-fit w-full h-full lg:h-[12rem]"
           />
           <img
-            src="/assets/banner3.webp"
+            src="/banner3.png"
             alt="most populars banner"
             className="object-fit w-full h-full lg:h-[12rem]"
           />
           <img
-            src="/assets/banner4.webp"
+            src="/banner4.png"
             alt="most populars banner"
             className="object-fit w-full h-full lg:h-[12rem]"
           />

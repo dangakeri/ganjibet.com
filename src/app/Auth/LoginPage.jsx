@@ -3,18 +3,18 @@ import { Link, useNavigate } from "react-router";
 import { useAppState } from "../../context/AuthContext";
 import Loader from "../../components/Loader";
 import { Fingerprint } from "lucide-react";
-import { InputGroup, InputLeftAddon, Input } from "@chakra-ui/react";
+import { InputGroup, InputLeftAddon } from "@chakra-ui/react";
 import Footer from "../../components/profile/Footer";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { useQueryClient } from "@tanstack/react-query";
+
 import { useLogIn } from "../../hooks/useAuth";
 
 function LoginPage() {
   const { dispatch } = useAppState();
   const { logInFn, isLoading } = useLogIn();
   const navigate = useNavigate();
-  const queryClient = useQueryClient();
+
   const { handleSubmit, register } = useForm();
   function submitLoginData(data) {
     logInFn(data, {
@@ -131,14 +131,9 @@ function LoginPage() {
                       By clicking login in this site, You can confirm that you
                       are over 18 years old and you have read and agree to the
                       <span className="underline cursor-pointer text-primary">
-                        <a
-                          href="/pdf/terms-and-condition.pdf"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:underline"
-                        >
-                          Terms of service
-                        </a>
+                        <Link to="/terms-and-conditions">
+                          <p className="hover:underline">Terms of service</p>
+                        </Link>
                       </span>
                     </p>
                     <div className="text-center">
