@@ -5,7 +5,7 @@ import AuthNavs from "./auth/AuthNavs";
 import { Link } from "react-router";
 import Deposit from "./auth/Deposit";
 
-function Navbar({}) {
+function Navbar() {
   const { user } = useAppState();
 
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -5,9 +5,9 @@ function SplashLoader() {
         {/* Your animated loader */}
         <div className="glow-dot animate-ping  rounded-full relative w-24 h-24">
           <img
-            src="././assets/splash.svg"
+            src="/favicon.svg"
             alt="Swiftbet"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-full"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[#FF6D00] rounded-full animate-growGlow opacity-30"></div>
         </div>

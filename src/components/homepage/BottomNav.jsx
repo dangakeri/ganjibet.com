@@ -3,8 +3,6 @@ import { NavLink } from "react-router";
 import styled from "styled-components";
 import { useAppState } from "../../context/AuthContext";
 
-import toast from "react-hot-toast";
-
 const StyledNavLink = styled(NavLink)`
   display: flex;
   flex-direction: column;
@@ -28,7 +26,7 @@ function BottomNav() {
         <StyledNavLink to="/home" end>
           {({ isActive }) => (
             <div className="flex flex-col items-center justify-center gap-1 cursor-pointer">
-              <img src="./assets/home.svg" className="h-[24px]" />
+              <img src="/assets/home.svg" className="h-[24px]" />
               <p
                 className={`font-normal text-sm ${
                   isActive ? "text-[#FF6D00]" : "text-textGrey"
@@ -40,7 +38,7 @@ function BottomNav() {
           )}
         </StyledNavLink>
         <StyledNavLink to={!user ? "/login" : `/sports`}>
-          {({ isActive }) => (
+          {() => (
             <div className="flex flex-col items-center justify-center gap-1">
               <img
                 src="/assets/sports.svg"
